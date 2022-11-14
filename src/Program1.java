@@ -10,7 +10,7 @@ public class Program1 {
 		sb.append(str);
 		for(int i=0;i<sb.length();i++) {
 			char ch = sb.charAt(i);
-			for(int j=i+1;j<sb.length();j++) {
+			for(int j=sb.length()-1;j>i;j--) {
 				if(ch == sb.charAt(j)) {
 					sb.deleteCharAt(j);
 				}
