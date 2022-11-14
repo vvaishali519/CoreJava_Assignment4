@@ -20,6 +20,22 @@ public class Program1 {
 		System.out.println("String after removing duplicates : " +sb);
 		
 		
+		//Approach 2
+		String str2 = "";
+		for(int i=0;i<str.length();i++) {
+			int count =0;
+			char ch = str.charAt(i);
+			for(int j=i+1;j<str.length();j++) {
+				if(ch == str.charAt(j)) {
+					count++;
+				}
+			}
+			if(count == 0) {
+				str2 = str2+ch;
+			}
+		}
+		
+		System.out.println("String after removing duplicates : " +str2);
 		
 
 	}
